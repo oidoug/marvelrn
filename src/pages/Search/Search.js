@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 
 import CharacterItem from '../../components/CharacterItem';
+import Paginator from '../../components/Paginator';
 
 import { main, type } from '../../components/Main.styles';
 import { styles } from './Search.styles';
@@ -104,70 +105,11 @@ export default function Search() {
           </View>
         }
       />
-
-      <View style={styles.paginator}>
-
-        {/* Left press */}
-        <TouchableOpacity 
-          style={[
-            styles.jumpButtom,
-            page <= 1 ? styles.jumpButtomDisabled : null
-          ]}
-          activeOpacity={0.3}
-          onPress={() => {
-            page > 0 ? setPage(page-1) : null;
-          }}
-        >
-          <Image style={[styles.jumpButtomImage, styles.jumpButtomImageLeft]} source={require('../../assets/arrow_right.png')} />
-        </TouchableOpacity>
-
-        {/* Paging buttons */}
-        <FlatList style={styles.pageButtonList}
-          data={totalPages}
-          horizontal={true}
-          keyExtractor={(item, index) => {`${index}`}}
-          renderItem={({item, index}) => {
-            return(
-              <TouchableOpacity 
-                style={[ 
-                  styles.pageButton, 
-                  index === page ? styles.pageButtonSelected : null
-                ]}
-                activeOpacity={0.3}
-                onPress={() => {
-                  setPage(index);
-                }}
-              >
-                <Text 
-                  style={[
-                    type.pageButtonText,
-                    index === page ? type.pageButtonTextSelected : null
-                  ]}
-                >
-                  {`${index + 1}`}
-                </Text>
-              </TouchableOpacity>
-            );
-          }}
-        />
-
-        {/* Right press */}
-        <TouchableOpacity 
-          style={[
-            styles.jumpButtom,
-            page >= totalPages.length ? styles.jumpButtomDisabled : null
-          ]}
-          activeOpacity={0.3}
-          onPress={() => {
-            page < totalPages.length ? setPage(page+1) : null;
-          }}
-        >
-          <Image style={[styles.jumpButtomImage]} source={require('../../assets/arrow_right.png')} />
-        </TouchableOpacity>
-
-      </View>
-      <View style={styles.footer} />
-
+      <Paginator 
+        page={page} 
+        setPage={setPage}
+        totalPages={totalPages}
+      />
     </View>
   );
 }
