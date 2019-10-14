@@ -1,14 +1,10 @@
 import axios from 'axios';
 import md5 from 'md5';
 
-// Base URL for tmdb images.
-export const baseImgURL = "https://image.tmdb.org/t/p/w500";
-export const baseBackdropURL = "https://image.tmdb.org/t/p/original";
 
 // Keys, should not be exposed here, but will keep to make testing the app easier.
 const private_key = "ae10462edfcb14ca930ed05aac576691c0fd8cb8";
 const apikey = "8f8b07194294183b66ee155695fc00f1";
-
 
 // Starting API instance.
 const api = axios.create({
@@ -23,7 +19,7 @@ api.interceptors.request.use((config) => {
     ...config.params,
     apikey,
     hash,
-    ts
+    ts,
   };
   return config;
 });

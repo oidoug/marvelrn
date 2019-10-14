@@ -2,31 +2,17 @@ import {
   StyleSheet,
 } from 'react-native';
 
+import { colors } from './Main.styles';
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   card: {
     top: -16,
-    backgroundColor: "black",
+    backgroundColor: colors.primary,
     borderTopEndRadius: 16,
     borderTopStartRadius: 16,
-    borderWidth: 1,
-    borderColor: '#2b2c2d',
+    borderWidth: 0,
     borderBottomWidth: 0,
     paddingHorizontal: 20,
-  },
-  cardRidge: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
-  },
-  ridgeNodge: {
-    marginVertical: 10,
-    marginHorizontal: 10,
-    width: 48,
-    height: 4,
-    borderRadius: 3,
-    backgroundColor: 'white',
-    opacity: 0.1,
   },
   title: {
     marginVertical: 10,
@@ -72,9 +58,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   buttonBlue: {
-    backgroundColor: "#009DFF",
+    backgroundColor: 'blue',
   },
   buttonRed: {
-    backgroundColor: "#FF0000",
+    backgroundColor: 'red',
   }
 });

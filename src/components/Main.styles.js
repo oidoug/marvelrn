@@ -15,8 +15,16 @@ export const main = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.background,
   },
+  safe: {
+    paddingTop: 44,
+  },
+  loading: {
+    paddingTop: 100,
+  },
   center: {
+    flex: 1,
     justifyContent: 'center',
+    alignContent: 'center',
   },
   input: {
     height: 31,
@@ -29,7 +37,6 @@ export const main = StyleSheet.create({
   },
   section: {
     backgroundColor: colors.primary,
-
     paddingVertical: 10,
     paddingHorizontal: 110,
   },
@@ -73,4 +80,12 @@ export const type = StyleSheet.create({
     textAlignVertical: "center",
     flex: 1,
   },
+  pageButtonText: {
+    fontSize: 18,
+    fontFamily: "Roboto-Regular",
+    color: colors.primary,
+  },
+  pageButtonTextSelected: {
+    color: colors.sectionTitle,
+  }
 });

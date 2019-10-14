@@ -17,12 +17,12 @@ export default function Detail(props) {
   const character = props.navigation.getParam('character');
 
   return (
-    <View style={main.container}>
+    <View style={styles.container}>
 
-      <ScrollView style={main.container}>
+      <ScrollView style={[styles.container]}>
         <Image 
-          style={styles.cover}
-          source={{uri: character.thumbnail.path+character.thumbnail.extension}}
+          style={ styles.cover }
+          source={{uri: character.thumbnail.path+'.'+character.thumbnail.extension}}
         />
         <CharacterCard character={character}/>
       </ScrollView>
