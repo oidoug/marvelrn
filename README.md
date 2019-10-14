@@ -15,7 +15,8 @@ react-native run-android
 <img src="https://user-images.githubusercontent.com/129619/66735003-89916880-ee3b-11e9-8914-0ea5c7358378.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/129619/66734998-88f8d200-ee3b-11e9-8fad-a17dd01ebf2c.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/129619/66735004-89916880-ee3b-11e9-8f41-f136267de150.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/129619/66735006-89916880-ee3b-11e9-8969-a8c954153bd9.png" width="45%"></img> 
 
 ### Android
-<img src="https://user-images.githubusercontent.com/129619/66735013-8d24ef80-ee3b-11e9-8df4-bf17423a7d49.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/129619/66735011-8d24ef80-ee3b-11e9-95a7-1a3b7278ba71.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/129619/66735014-8dbd8600-ee3b-11e9-8b74-dd4cc435300b.png" width="45%"></img> 
+<img src="https://user-images.githubusercontent.com/129619/66737551-b137ff00-ee42-11e9-8712-2782c790df04.png" width="45%"></img> 
+<img src="https://user-images.githubusercontent.com/129619/66735011-8d24ef80-ee3b-11e9-95a7-1a3b7278ba71.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/129619/66735014-8dbd8600-ee3b-11e9-8b74-dd4cc435300b.png" width="45%"></img> 
 
 ## Scenarios
   
