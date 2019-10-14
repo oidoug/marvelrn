@@ -16,7 +16,7 @@ react-native run-android
 
 ### Android
 <img src="https://user-images.githubusercontent.com/129619/66737551-b137ff00-ee42-11e9-8712-2782c790df04.png" width="45%"></img> 
-<img src="https://user-images.githubusercontent.com/129619/66735011-8d24ef80-ee3b-11e9-95a7-1a3b7278ba71.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/129619/66735014-8dbd8600-ee3b-11e9-8b74-dd4cc435300b.png" width="45%"></img> 
+<img src="https://user-images.githubusercontent.com/129619/66735011-8d24ef80-ee3b-11e9-95a7-1a3b7278ba71.png" width="45%"></img>
 
 ## Scenarios
   
