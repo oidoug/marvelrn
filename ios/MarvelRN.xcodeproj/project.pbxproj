@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* MarvelRNTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MarvelRNTests.m */; };
 		0C0FFB451B0A51099E8BB53F /* libPods-MarvelRNTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E21164959283131655027E /* libPods-MarvelRNTests.a */; };
@@ -20,6 +19,9 @@
 		319E659D34F45760B906C43B /* libPods-MarvelRN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81CCCBE15D3B4866870A0C86 /* libPods-MarvelRN.a */; };
 		6FA7B046036629E3C57830F4 /* libPods-MarvelRN-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CACB21E5B75FD7A78A3F204B /* libPods-MarvelRN-tvOS.a */; };
 		CA36AA5280E37AAD6F81926D /* libPods-MarvelRN-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B97DAE130B89F27059530D9 /* libPods-MarvelRN-tvOSTests.a */; };
+		79037065CA7D4D1DB2A9AA44 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C153F67959C842999E3857C3 /* Roboto-Black.ttf */; };
+		FFDE6B78AFA04BCF970B7F6D /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1EAC1044A24472D8F46DF41 /* Roboto-Light.ttf */; };
+		31FEB584AF4E4898837A9DD7 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8FBD950EEFE49AEBB27697F /* Roboto-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,9 @@
 		E4C3E5B7083CE2B40F3CCE5E /* Pods-MarvelRN-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelRN-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-MarvelRN-tvOSTests/Pods-MarvelRN-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		C153F67959C842999E3857C3 /* Roboto-Black.ttf */ = {isa = PBXFileReference; name = "Roboto-Black.ttf"; path = "../src/assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F1EAC1044A24472D8F46DF41 /* Roboto-Light.ttf */ = {isa = PBXFileReference; name = "Roboto-Light.ttf"; path = "../src/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B8FBD950EEFE49AEBB27697F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +166,6 @@
 				1E990B44F22FA95DE9D588A6 /* Pods-MarvelRNTests.debug.xcconfig */,
 				E00321094408C9EDAEB4CCAC /* Pods-MarvelRNTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -181,6 +185,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				6C7C25FC73542FBBC2B3AAA7 /* Pods */,
+				B1BEE65D8DC64057A3D7DE8B /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -197,6 +202,17 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		B1BEE65D8DC64057A3D7DE8B /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				C153F67959C842999E3857C3 /* Roboto-Black.ttf */,
+				F1EAC1044A24472D8F46DF41 /* Roboto-Light.ttf */,
+				B8FBD950EEFE49AEBB27697F /* Roboto-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -285,7 +301,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -308,6 +324,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -338,6 +355,9 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				79037065CA7D4D1DB2A9AA44 /* Roboto-Black.ttf in Resources */,
+				FFDE6B78AFA04BCF970B7F6D /* Roboto-Light.ttf in Resources */,
+				31FEB584AF4E4898837A9DD7 /* Roboto-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

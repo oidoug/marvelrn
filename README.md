@@ -25,3 +25,6 @@ Small App for challenge that uses Marvel API to show its heros.
 * Should render Main page as intended or show connection error
 * Should render Detail page as intended or show connection error
 
+## What could be improved
+- [ ] Add more visual resources, like icons
+- [ ] Tests are too superficial, snapshots only helps when code is production ready
