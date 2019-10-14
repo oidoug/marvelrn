@@ -1,6 +1,10 @@
 import {
   StyleSheet,
+  Platform,
 } from 'react-native';
+
+const top = Platform.OS === "ios" ? 44 : 10;
+const inputHeight = Platform.OS === "ios" ? 32 : 38;
 
 export const colors = {
   primary: "#D42026",
@@ -16,7 +20,7 @@ export const main = StyleSheet.create({
     backgroundColor: colors.background,
   },
   safe: {
-    paddingTop: 44,
+    paddingTop: top,
   },
   loading: {
     paddingTop: 100,
@@ -27,7 +31,7 @@ export const main = StyleSheet.create({
     alignContent: 'center',
   },
   input: {
-    height: 31,
+    height: inputHeight,
     width: '100%',
     paddingHorizontal: 10,
     borderWidth: 1,
