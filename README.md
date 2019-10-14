@@ -1,6 +1,14 @@
 # Marvel-RN
 Small App for challenge that uses Marvel API to show its heros.
 
+## Running
+```bash
+yarn
+cd ios; pod install
+react-native run-ios
+react-native run-android
+```
+
 ## Scenarios
   
 1. List characters API limited to 5 items each page
