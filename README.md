@@ -1,5 +1,5 @@
 # Marvel-RN
-Small App for challenge that uses Marvel API to show its heros.
+Small App for a challenge that uses Marvel API to show its heroes.
 
 ## Running
 ```bash
